@@ -1,0 +1,583 @@
+
+/*fonts*/
+
+@font-face {
+  font-family:'merriweather';
+  src: url('../assets/fonts/merriweather-bold-webfont.eot');
+  src: url('../assets/fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/merriweather-bold-webfont.woff2') format('woff2'),
+  url('../assets/fonts/merriweather-bold-webfont.woff') format('woff'),
+  url('../assets/fonts/merriweather-bold-webfont.ttf') format('truetype'),
+  url('../assets/fonts/merriweather-bold-webfont.svg#merriweatherbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../assets/fonts/merriweather-bolditalic-webfont.eot');
+  src: url('../assets/fonts/merriweather-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
+  url('../assets/fonts/merriweather-bolditalic-webfont.woff') format('woff'),
+  url('../assets/fonts/merriweather-bolditalic-webfont.ttf') format('truetype'),
+  url('../assets/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../assets/fonts/merriweather-italic-webfont.eot');
+  src: url('../assets/fonts/merriweather-italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/merriweather-italic-webfont.woff2') format('woff2'),
+  url('../assets/fonts/merriweather-italic-webfont.woff') format('woff'),
+  url('../assets/fonts/merriweather-italic-webfont.ttf') format('truetype'),
+  url('../assets/fonts/merriweather-italic-webfont.svg#merriweatheritalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../assets/fonts/merriweather-regular-webfont.eot');
+  src: url('../assets/fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/merriweather-regular-webfont.woff2') format('woff2'),
+  url('../assets/fonts/merriweather-regular-webfont.woff') format('woff'),
+  url('../assets/fonts/merriweather-regular-webfont.ttf') format('truetype'),
+  url('../assets/fonts/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../assets/fonts/opensans-regular-webfont.eot');
+  src: url('../assets/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/opensans-regular-webfont.woff2') format('woff2'),
+  url('../assets/fonts/opensans-regular-webfont.woff') format('woff'),
+  url('../assets/fonts/opensans-regular-webfont.ttf') format('truetype'),
+  url('../assets/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../assets/fonts/opensans-extrabold-webfont.eot');
+  src: url('../assets/fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+  url('../assets/fonts/opensans-extrabold-webfont.woff') format('woff'),
+  url('../assets/fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+  url('../assets/fonts/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../assets/fonts/opensans-extrabolditalic-webfont.eot');
+  src: url('../assets/fonts/opensans-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+  url('../assets/fonts/opensans-extrabolditalic-webfont.woff') format('woff'),
+  url('../assets/fonts/opensans-extrabolditalic-webfont.ttf') format('truetype'),
+  url('../assets/fonts/opensans-extrabolditalic-webfont.svg#open_sansextrabold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../assets/fonts/opensans-italic-webfont.eot');
+  src: url('../assets/fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/opensans-italic-webfont.woff2') format('woff2'),
+  url('../assets/fonts/opensans-italic-webfont.woff') format('woff'),
+  url('../assets/fonts/opensans-italic-webfont.ttf') format('truetype'),
+  url('../assets/fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/*General Styling*/
+/*---------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #292929;
+  line-height: 1.5;
+  background-color:#f3f3f3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+ul{
+	text-align: center;
+	list-style:none;
+  width:100%; 
+  font-size: .8rem;
+}
+
+p{
+  font-family: 'merriweather', serif;
+  font-size: .8rem;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'open_sans', sans-serif;
+  font-weight:bold;
+  text-align: center;
+  font-size:1.75rem;
+  margin: 2rem 0 1rem 0;
+}
+
+
+h2{
+  text-align: center;
+  font-family: 'open_sans', sans-serif;
+  font-weight: normal;
+
+}
+
+h3{
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  font-family: 'open_sans', sans-serif;
+}
+
+h4{
+  font-family: 'open_sans', sans-serif;
+  font-weight:normal;
+  font-size: .8em;
+}
+
+/*Header styling*/
+/*---------------------------------*/
+
+header{
+	background-image: url('../assets/images/rustic-masthead.jpg');
+	background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+nav ul{
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  font-family:'open_sans', sans-serif;
+  font-weight: bold;
+  font-size: .8rem;
+  padding: .5rem 0;
+}
+
+nav li{
+	display:inline-block;
+  padding: .33rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header img{
+ display: block;
+ width:90%;
+ margin:1rem auto;
+}
+
+#logo {
+  max-width:90%
+}
+
+.motto{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.motto p, button{
+  font-family:'open_sans';
+  color:white;
+}
+
+button {
+	background-color: #f89603;
+  height:auto;
+  margin:1rem 0 2rem 0;
+  border:1px solid black;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: .33rem 1.25rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+.open_sign {
+  box-shadow: inset 0 0 0 1000px rgba(72, 49,24,.9);  
+  overflow: auto;
+  padding: .67rem 0;
+  text-align: center;
+  color:white;
+  font-family: 'open_sans';
+}
+
+span#day {
+  font-size:.8rem;
+}
+
+span#open{
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  display:block;
+}
+
+
+/*Local Flavours Styling*/
+/*---------------------------------*/
+
+.local_flavours{
+	text-align: center;
+  padding: 0 2.5% 2rem 2.5%;
+}
+
+.menutext p{
+  margin-bottom: .5rem;  
+}
+
+.foodimage {
+  width: 100%;
+}
+
+.menu_items{
+  text-align: center;
+}
+.menu_wrapper{
+  padding-bottom: 2rem;
+}
+
+.menu_wrapper ul{
+  font-family: 'merriweather', serif;
+  margin-bottom:1.25rem;
+}
+
+.menu_wrapper li{
+  margin-bottom: .25rem;
+}
+
+/*Book Now Styling*/
+/*---------------------------------*/
+
+.booknow {
+	background-image:url(../assets/images/tables.jpg);
+  background-position:center;
+  background-size: cover;
+  color:white;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); 
+  padding: 2rem;
+  text-align: center;
+}
+
+.booknow h1{
+  margin: 0;
+  padding-bottom: 1rem
+}
+
+.booknow p{
+  margin-bottom: 1rem;
+}
+
+.booknow button{
+  margin:0;
+}
+
+form{
+ display: block; 
+ margin:auto;
+ color: #e7e3c5;
+ text-align: left;
+}
+
+label{
+ display: block; 
+ font-family: 'open_sans';
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+input {
+  border: 2px solid orange;
+  margin: .33rem 0 1rem 0;
+  display: block;
+  width:100%;
+  line-height: 1.5rem;
+  color:black;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Find Us Styling*/
+/*---------------------------------*/
+
+.findus {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.findus p{
+  padding-bottom: 2%;
+}
+
+.findus i{
+  color:#e7e3c5;
+  font-size: 2rem;
+  margin-top:1rem;
+}
+
+
+
+/*Footer Styling*/
+/*---------------------------------*/
+
+footer {
+	background-color: #483118;
+  margin-top: auto;
+  padding: 2rem 0;
+}
+
+
+.footer-logo {
+
+  float:left;
+  width:30%;
+  max-width:150px;
+  padding-left: 5%;
+  margin-top:1rem;
+}
+
+
+.followus{
+  display:inline-block;
+  float:right;
+  text-align:right;
+  margin:auto;
+  color:white;
+  padding-right: 2.5%;
+}
+
+.followus i{
+  padding: .33rem;
+}
+
+a .fa{
+  color:white;
+}
+
+
+/*Media Query for Tablet Size*/
+/*---------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    h1{
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p{
+      font-size:.9rem;
+      max-width: 75%;
+      margin:auto
+    }
+
+
+    nav ul{
+      text-align: right;
+    }
+    nav li{
+      padding: 0 .75rem ;
+      font-size: .9rem;
+    }
+
+    #logo{
+      max-width:60%;
+      padding-top: 3rem;
+    }
+
+    .motto{
+      margin-top: 1rem;
+      font-size:1rem;
+    }
+
+    .open_sign{
+      padding: 1rem 0;
+      margin-top:3rem;
+    }
+
+    .bx-wrapper li{
+      width: 50vw !important;
+    }
+
+    .menu_wrapper{
+      text-align: center;
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .menu_wrapper h3{
+      font-size: 1.65rem;
+      margin-bottom: .75rem;
+    }
+
+    .menu_wrapper li{
+      font-size: .9rem;
+      margin-bottom: .75rem;
+    }
+
+    .forks{
+      margin-left:2.5%;
+      width:33%;
+      padding-right:2%;
+    }
+
+    .knives{
+      margin: 0%;
+      width:33%;
+      padding-right:2%;
+    }
+
+    .glasses{
+      margin-right:2.5;
+      width:33%;
+      font-size: .9em;
+    }
+
+    .form_wrapper{
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+   }
+
+   .form_wrapper label{
+    text-align: left;
+    margin-bottom: 0
+  }
+
+  .formleft{
+    width:25%;
+    margin-left:5%;
+    display:inline-block;
+  }
+
+  .formcenter{
+    width:25%;
+    margin-left:5%;
+    margin-right:5%;
+    display:inline-block;
+  }
+
+  .formright{
+    width:25%;
+    margin-right: 5%;
+    display:inline-block;
+  }
+
+  .booknow{
+    box-shadow: none;
+  }
+
+  .overlay{
+    background-color:rgba(0,0,0, .6);
+    padding-bottom:2rem;
+  }
+
+  .overlay h1{
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  form{
+    padding-bottom: 2%
+  }
+
+
+  input{
+    padding: .5rem;
+  }
+
+  button{
+    padding: .5rem 1.5rem;
+    font-size:.9rem;
+  }
+
+  .contact-container{
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .contact-container i{
+    font-size:2.5rem;
+  }
+
+  .address{
+    width:33%;
+    margin-left:5%;
+  }
+
+  .phone{
+    width:33%;
+  }
+
+  .email{
+    width:33%;
+    margin-right: 5%;
+  }
+
+
+  .footer-logo{
+    max-width: 190px;
+  }
+}
+
+
+/*Media Query for Desktop Size*/
+/*---------------------------------*/
+
+@media screen and (min-width: 1100px) {
+
+h1{
+  font-size:2.25rem;
+}
+
+h3{
+  font-size:1.75;
+}
+
+p {
+  font-size: 1rem;
+}
+
+  #logo{
+    max-width: 60%;
+  }
+
+    .bx-wrapper li{
+    width: 33.3vw !important;
+  }
+
+  .menu_wrapper li{
+    font-size:1rem;
+  }
+
+}
