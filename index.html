@@ -6,9 +6,9 @@
 	<title>100 Mile Resto Bar</title>
 	<!--CSS files-->
 	<link rel="stylesheet" href="styles/reset.css">
-	<link href="js/jquery.bxslider.css" rel="stylesheet" />
-	<link href="js/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet"/>
-	<link href="styles/jquery.timepicker.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="plugins/jquery.bxslider/jquery.bxslider.css" />
+	<link rel="stylesheet" href="plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="plugins/jonthornton-jquery-timepicker-9f90801/jquery.timepicker.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/style.css">		
 </head>
@@ -23,10 +23,10 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
-			<img id='logo' src="assets/images/100-mile-logo-long.svg" alt="100 Mile Resto Bar Logo">
+		<img id='logo' src="assets/images/100-mile-logo-long.svg" alt="100 Mile Resto Bar Logo">
 		<div class="motto">
 			<p>Grown here.</p>
-			<p>Made here.</P>
+			<p>Made here.</p>
 			<p>Eaten here.</p>	
 			<button>
 				<a href="#menu" >See our menu ></a> 
@@ -56,122 +56,122 @@
 			<li><img src="assets/images/slider_images/sweet-cakes.jpg" alt="Food served at 100 Mile Resto Bar"></li>
 		</ul>
 	</section>
-	
+
 	<section class="menu_items">
 		<a id="menu"></a>
 		<h1>Food & Drink</h1>
-			<div class="menu_wrapper">	
-				<div class="forks">
-					<h3>Forks</h3>
-					<ul>
-						<li>Foraged Fried Green Tomato - $10</li>
-						<li>Braised Blackberry Poutine - $12</li>
-						<li>Pickled Kale Salad - $15</li>
-						<li>Gnocchi on a Rock - $23</li>
-					</ul>
-				</div>
-				<div class="knives">
-					<h3>Knives</h3>
-					<ul>
-						<li>Truffled Bacon - $10</li>
-						<li>Pickled Deer with Saffron - $12</li>
-						<li>Braised Boar & Waffles - $15</li>
-						<li>Organic Salted Pasta - $16</li>
-						<li>Free Range Pork Belly - $23</li>
-					</ul>
-				</div>
-				<div class="glasses">
-					<h3>Glasses</h3>
-					<ul>
-						<li>Artisnal Water - $4</li>
-						<li>Hand-Pressed Fruit-Juice - $5</li>
-						<li>Craft Beer - $5 glass / $7 pint</li>
-						<li>Organic House Red or White - $10</li>
-					</ul>
-				</div>
+		<div class="menu_wrapper">	
+			<div class="forks">
+				<h3>Forks</h3>
+				<ul>
+					<li>Foraged Fried Green Tomato - $10</li>
+					<li>Braised Blackberry Poutine - $12</li>
+					<li>Pickled Kale Salad - $15</li>
+					<li>Gnocchi on a Rock - $23</li>
+				</ul>
 			</div>
-		</section>
+			<div class="knives">
+				<h3>Knives</h3>
+				<ul>
+					<li>Truffled Bacon - $10</li>
+					<li>Pickled Deer with Saffron - $12</li>
+					<li>Braised Boar & Waffles - $15</li>
+					<li>Organic Salted Pasta - $16</li>
+					<li>Free Range Pork Belly - $23</li>
+				</ul>
+			</div>
+			<div class="glasses">
+				<h3>Glasses</h3>
+				<ul>
+					<li>Artisnal Water - $4</li>
+					<li>Hand-Pressed Fruit-Juice - $5</li>
+					<li>Craft Beer - $5 glass / $7 pint</li>
+					<li>Organic House Red or White - $10</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-		<section class="booknow" id="book"> 
-			<div class="overlay">
-				<h1>BOOK A TABLE</h1>
-				<div class="menutext">
-					<p>If you would like to book a table at 100 Mile Resto Bar for up to 8 people, please use our booking form below. We will send you confirmation as soon as we can.</p>
-				</div>
-				<form action="submit.php" method="get">
-					<div class="form_wrapper"> 
-						<div class="formleft">
-							<label >Which Date? </label><input type="text" id="datepicker"> 
-						</div>
-						<div class="formcenter">
-							<label>What Time? </label><input id="timeform" type="text" class="time ui-timepicker-input" data-scroll-default="6:00am" autocomplete="off">
-						</div>
-						<div class="formright">
-							<label >No. of People </label><input type="text" name="NO_PEOPLE"/> 
-						</div>
-						<div class="formleft">
-							<label>Your Name</label><input type="text" name="YOUR_NAME"/> 
-						</div>
-						<div class="formcenter">
-							<label>Phone </label><input type="text" name="PHONE"/> 
-						</div>
-						<div class="formright">
-							<label>Email</label><input type="text" name="EMAIL"/> 
-						</div>
+	<section class="booknow" id="book"> 
+		<div class="overlay">
+			<h1>BOOK A TABLE</h1>
+			<div class="menutext">
+				<p>If you would like to book a table at 100 Mile Resto Bar for up to 8 people, please use our booking form below. We will send you confirmation as soon as we can.</p>
+			</div>
+			<form action="submit.php" method="get">
+				<div class="form_wrapper"> 
+					<div class="formleft">
+						<label >Which Date? </label><input type="text" id="datepicker"> 
 					</div>
-				</form>
-				<button>
+					<div class="formcenter">
+						<label>What Time? </label><input id="timeform" type="text" class="time ui-timepicker-input" data-scroll-default="6:00am" autocomplete="off">
+					</div>
+					<div class="formright">
+						<label >No. of People </label><input type="text" name="NO_PEOPLE"/> 
+					</div>
+					<div class="formleft">
+						<label>Your Name</label><input type="text" name="YOUR_NAME"/> 
+					</div>
+					<div class="formcenter">
+						<label>Phone </label><input type="text" name="PHONE"/> 
+					</div>
+					<div class="formright">
+						<label>Email</label><input type="text" name="EMAIL"/> 
+					</div>
+				</div>
+			</form>
+			<button>
 				<a href="#link" > Book Now > </a> 
-				</button>
+			</button>
+		</div>
+	</section>
+
+	<section class="findus" id="contact">
+		<h1>FIND US</h1>
+		<div class="contact-container">	
+			<div class="address">
+				<p><i class="fa fa-map-marker fa-2x"></i></p>
+				<p>1490 W Broadway, <br>Vancouver BC</p>
 			</div>
-		</section>
-
-		<section class="findus" id="contact">
-			<h1>FIND US</h1>
-			<div class="contact-container">	
-				<div class="address">
-					<p><i class="fa fa-map-marker fa-2x"></i></p>
-					<p>1490 W Broadway, <br>Vancouver BC</p>
-				</div>
-				<div class="phone">
-					<p><i class="fa fa-phone fa-2x"></i></p>
-					<p>604-604-6040</p>
-				</div>
-				<div class="email">
-					<p ><i class="fa fa-envelope fa-2x"></i></p>
-					<p>info@hundredmilerestobar.com</p>
-				</div>
+			<div class="phone">
+				<p><i class="fa fa-phone fa-2x"></i></p>
+				<p>604-604-6040</p>
 			</div>
-		</section>
+			<div class="email">
+				<p ><i class="fa fa-envelope fa-2x"></i></p>
+				<p>info@hundredmilerestobar.com</p>
+			</div>
+		</div>
+	</section>
 
-		<footer>
-			<div class="footerbackground clearfix">
-	
-					<img class='footer-logo' src="assets/images/100-mile-logo-stacked.svg" alt="100 Mile Restaurant Logo">
+	<footer>
+		<div class="footerbackground clearfix">
 
-				<div class='followus'>
-					<span>Follow us on:</span></br>
-					<a href="https://www.facebook.com/" target="_blank">
+			<img class='footer-logo' src="assets/images/100-mile-logo-stacked.svg" alt="100 Mile Restaurant Logo">
+
+			<div class='followus'>
+				<span>Follow us on:</span></br>
+				<a href="https://www.facebook.com/" target="_blank">
 					<i class="fa fa-facebook fa-2x"></i></a>
-					<a href="https://www.instagram.com/" target="_blank">
+				<a href="https://www.instagram.com/" target="_blank">
 					<i class="fa fa-instagram fa-2x"></i></a>
-					<a href="https://www.twitter.com/" target="_blank">
+				<a href="https://www.twitter.com/" target="_blank">
 					<i class="fa fa-twitter-square fa-2x"></i></a>		
-					<h4> © 100 Mile Resto Bar 2015 </h4>
-				</div>
+				<h4> © 100 Mile Resto Bar 2015 </h4>
 			</div>
-		</footer>
-		<!---Javascript files -->
-		<!--Image Slider-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="js/jquery.bxslider.min.js"></script>
-		<!--Timepicker for bookings-->
-		<script src="js/jonthornton-jquery-timepicker-9f90801/jquery.timepicker.min.js">	</script>
-		<!--Datepicker for bookings-->
-		<script src="js/jquery-ui-1.11.4.custom/jquery-ui.js">	</script>
-		<!--Styling for website-->
-		<script src="js/script.js"></script>
-	</body>
+		</div>
+	</footer>
+	<!---Javascript files -->
+	<!--Image Slider-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<!--Timepicker for bookings-->
+	<script src="plugins/jonthornton-jquery-timepicker-9f90801/jquery.timepicker.min.js">	</script>
+	<!--Datepicker for bookings-->
+	<script src="plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js">	</script>
+	<!--Styling for website-->
+	<script src="js/script.js"></script>
+</body>
 </html>
 
 
