@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css"/>
 	<link rel="stylesheet" href="plugins/jonthornton-jquery-timepicker-9f90801/jquery.timepicker.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="styles/style.css" />		
+	<link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
@@ -27,24 +27,24 @@
 		<div class="motto">
 			<p>Grown here.</p>
 			<p>Made here.</p>
-			<p>Eaten here.</p>	
-			<button><a href="#menu">See our menu >  </a></button>
+			<p>Eaten here.</p>
+			<a href="#menu"> <div class="btn">See our menu > </div> </a>
 		</div>
 		<div class="open_sign">
 			<span id="day"></span>
 			<span id="open"></span>
-		</div>		
-	</header>		
+		</div>
+	</header>
 
-	<section class="local_flavours" name="about" id="about">
+	<section class="local_flavours" id="about">
 		<h1>Local Flavours</h1>
 		<div class="menutext">
-			<p>Our menu is fresh, delicious, and locally sourced. We fuse flavour, seasonal and local ingredients with inspiration from out local neighbourhood.</p>
-			<p>Gastropub Truffaut salvia mumblecore kitsch, sartorial meggings bitters tofu.</p>
+			<p>Our menu is fresh, delicious, and locally sourced.</p>
+			<p> We fuse flavour, seasonal and local ingredients with inspiration from our local neighbourhood.</p>
 		</div>
 	</section>
 
-	<section class="image-slider">
+	<div class="image-slider">
 		<ul class="bxslider">
 			<li><img src="assets/images/slider_images/bread-stone.jpg" alt="Food served at 100 Mile Resto Bar"></li>
 			<li><img src="assets/images/slider_images/dish.jpg" alt="Food served at 100 Mile Resto Bar"></li>
@@ -53,12 +53,12 @@
 			<li><img src="assets/images/slider_images/knives-forks.jpg" alt="Food served at 100 Mile Resto Bar"></li>
 			<li><img src="assets/images/slider_images/sweet-cakes.jpg" alt="Food served at 100 Mile Resto Bar"></li>
 		</ul>
-	</section>
+	</div>
 
 	<section class="menu_items">
 		<a id="menu"></a>
 		<h1>Food & Drink</h1>
-		<div class="menu_wrapper">	
+		<div class="menu_wrapper">
 			<div class="forks">
 				<h3>Forks</h3>
 				<ul>
@@ -90,41 +90,41 @@
 		</div>
 	</section>
 
-	<section class="booknow" id="book"> 
+	<section class="booknow" id="book">
 		<div class="overlay">
 			<h1>BOOK A TABLE</h1>
 			<div class="menutext">
 				<p>If you would like to book a table at 100 Mile Resto Bar for up to 8 people, please use our booking form below. We will send you confirmation as soon as we can.</p>
 			</div>
 			<form action="submit.php" method="get">
-				<div class="form_wrapper"> 
+				<div class="form_wrapper">
 					<div class="formleft">
-						<label >Which Date? </label><input type="text" id="datepicker"> 
+						<label >Which Date? </label><input type="text" id="datepicker">
 					</div>
 					<div class="formcenter">
 						<label>What Time? </label><input id="timeform" type="text" class="time ui-timepicker-input" data-scroll-default="6:00am" autocomplete="off">
 					</div>
 					<div class="formright">
-						<label >No. of People </label><input type="text" name="NO_PEOPLE"/> 
+						<label >No. of People </label><input type="text" name="NO_PEOPLE"/>
 					</div>
 					<div class="formleft">
-						<label>Your Name</label><input type="text" name="YOUR_NAME"/> 
+						<label>Your Name</label><input type="text" name="YOUR_NAME"/>
 					</div>
 					<div class="formcenter">
-						<label>Phone </label><input type="text" name="PHONE"/> 
+						<label>Phone </label><input type="text" name="PHONE"/>
 					</div>
 					<div class="formright">
-						<label>Email</label><input type="text" name="EMAIL"/> 
+						<label>Email</label><input type="text" name="EMAIL"/>
 					</div>
 				</div>
 			</form>
-			<button href="link"> Book Now > </button>
+			<a href=""><div class="btn"> Book Now > </div></a>
 		</div>
 	</section>
 
 	<section class="findus" id="contact">
 		<h1>FIND US</h1>
-		<div class="contact-container">	
+		<div class="contact-container">
 			<div class="address">
 				<p><i class="fa fa-map-marker fa-2x"></i></p>
 				<p>1490 W Broadway, <br>Vancouver BC</p>
@@ -142,32 +142,30 @@
 
 	<footer>
 		<div class="footerbackground clearfix">
-
 			<img class='footer-logo' src="assets/images/100-mile-logo-stacked.svg" alt="100 Mile Restaurant Logo">
-
 			<div class='followus'>
 				<span>Follow us on:</span><br>
 				<a href="https://www.facebook.com/" target="_blank">
 					<i class="fa fa-facebook fa-2x"></i></a>
-				<a href="https://www.instagram.com/" target="_blank">
-					<i class="fa fa-instagram fa-2x"></i></a>
-				<a href="https://www.twitter.com/" target="_blank">
-					<i class="fa fa-twitter-square fa-2x"></i></a>		
-				<h4> © 100 Mile Resto Bar 2015 </h4>
-			</div>
-		</div>
-	</footer>
-	<!---Javascript files -->
-	<!--Image Slider-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
-	<!--Timepicker for bookings-->
-	<script src="plugins/jonthornton-jquery-timepicker-9f90801/jquery.timepicker.min.js">	</script>
-	<!--Datepicker for bookings-->
-	<script src="plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js">	</script>
-	<!--Styling for website-->
-	<script src="js/script.js"></script>
-</body>
-</html>
+					<a href="https://www.instagram.com/" target="_blank">
+						<i class="fa fa-instagram fa-2x"></i></a>
+						<a href="https://www.twitter.com/" target="_blank">
+							<i class="fa fa-twitter-square fa-2x"></i></a>
+							<h4> © 100 Mile Resto Bar 2015 </h4>
+						</div>
+					</div>
+				</footer>
+				<!---Javascript files -->
+				<!--Image Slider-->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+				<script src="plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+				<!--Timepicker for bookings-->
+				<script src="plugins/jonthornton-jquery-timepicker-9f90801/jquery.timepicker.min.js">	</script>
+				<!--Datepicker for bookings-->
+				<script src="plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js">	</script>
+				<!--Styling for website-->
+				<script src="js/script.js"></script>
+			</body>
+			</html>
 
 
